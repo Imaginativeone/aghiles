@@ -18,19 +18,19 @@ const next = document.getElementById('next')
 
 let index = 0
 
-// const showItem = n => {
-//   item.innerHTML = items[n].name
-// }
+const shopForItem = n => {
+  item.innerHTML = items[n].name
+}
 
-showItem(index)
+shopForItem(index)
 next.addEventListener('click', () => {
   index = (index + 1) % items.length 
-  showItem(index)
+  shopForItem(index)
 })
 
 prev.addEventListener('click', () => {
   index = (index +  items.length - 1) % items.length 
-  showItem(index)
+  shopForItem(index)
 })
 
 const boxButton = document.getElementById("addBoxButton");
