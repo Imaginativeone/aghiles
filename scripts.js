@@ -18,9 +18,9 @@ const next = document.getElementById('next')
 
 let index = 0
 
-const showItem = n => {
-  item.innerHTML = items[n].name
-}
+// const showItem = n => {
+//   item.innerHTML = items[n].name
+// }
 
 showItem(index)
 next.addEventListener('click', () => {
@@ -37,25 +37,31 @@ const boxButton = document.getElementById("addBoxButton");
 // boxButton.addEventListener("click", myFunction);
 // boxButton.addEventListener("click", () => showItem(items[0]));
 // boxButton.addEventListener("click", () => loopItems);
+boxButton.addEventListener("click", () => showItem(index));
 
 let boxContainer = document.getElementById("box-container");
 boxContainer.classList.add("box-container");
 
 // https://stackoverflow.com/questions/74459851/how-to-iterate-through-an-array-on-each-click-of-an-event-listener
-function showItemD(item) {
+function showItem(n) {
+
+  let item = items[n];
+
   const itemsContainer = document.getElementById("items-container");
   itemsContainer.classList.add("items-container");
 
+  item.innerHTML = items[n].name
+
   console.log(item);
 
-  // const itemDiv = document.createElement("div");
-  // itemDiv.classList.add("item");
-  // itemDiv.innerHTML = `
-  // <div class="item-name">${item.name}</div>
-  // <div class="item-price">${item.price}</div>
-  // <div class="item-id">${item.id}</div>
-  // `;
-  // itemsContainer.appendChild(itemDiv);
+  const itemDiv = document.createElement("div");
+  itemDiv.classList.add("item");
+  itemDiv.innerHTML = `
+  <div class="item-name">${item.name}</div>
+  <div class="item-price">${item.price}</div>
+  <div class="item-id">${item.id}</div>
+  `;
+  itemsContainer.appendChild(itemDiv);
 }
 
 // function showItems() {
