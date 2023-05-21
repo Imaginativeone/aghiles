@@ -75,5 +75,16 @@ const searchInput = document.getElementById("searchInput");
 searchInput.addEventListener("keyup", handleSearch);
 
 function handleSearch(e) {
-  console.log(e.target.value);
+
+  const searchString = e.target.value.toLowerCase();
+
+  const filteredItems = items.filter((item) => {
+    return (
+      item.name.toLowerCase().includes(searchString) ||
+      item.id.toLowerCase().includes(searchString)
+    );
+  });
+
+  console.log(filteredItems);
+
 }
