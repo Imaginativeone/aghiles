@@ -14,6 +14,20 @@
   width: 100%;
 }
 
+#items-container {
+  display: inline-flex;
+  writing-mode: auto;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  background: beige;
+  height: 100%;
+  width: 100%;
+}
+
+#item-id {
+  font-size: large;
+}
+
 /* Repeating Boxes */
 #repeatable-box {
   writing-mode: horizontal-tb;
