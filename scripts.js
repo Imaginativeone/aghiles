@@ -89,3 +89,9 @@ function handleSearch(e) {
 }
 
 // Database Functions
+const save = () => {};
+const allData = () => {};
+const removeData = () => {};
+const find = (id) => {};
+const read = () => {};
+const update = () => {};
