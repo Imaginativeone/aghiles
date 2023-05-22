@@ -89,7 +89,10 @@ function handleSearch(e) {
 }
 
 // Database Functions
-const save = () => {};
+const save = () => {
+  localStorage.setItem("items", JSON.stringify(items));
+};
+
 const allData = () => {};
 const removeData = () => {};
 const find = (id) => {};
