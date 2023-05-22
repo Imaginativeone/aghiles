@@ -13,26 +13,26 @@ const items = [
 ];
 
 // Shopping Functions //////////////////////
-const item = document.getElementById('item')
-const prev = document.getElementById('prev')
-const next = document.getElementById('next')
+const item = document.getElementById('item');
+const prev = document.getElementById('prev');
+const next = document.getElementById('next');
 
 const shopForItem = n => {
-  item.innerHTML = items[n].name
-}
+  item.innerHTML = items[n].name;
+};
 
-let index = 0 // This is also used in the showItem function, see line 38
+let index = 0; // This is also used in the showItem function, see line 38
 
-shopForItem(index)
+shopForItem(index);
 next.addEventListener('click', () => {
-  index = (index + 1) % items.length 
-  shopForItem(index)
-})
+  index = (index + 1) % items.length;
+  shopForItem(index);
+});
 
 prev.addEventListener('click', () => {
-  index = (index +  items.length - 1) % items.length 
-  shopForItem(index)
-})
+  index = (index +  items.length - 1) % items.length;
+  shopForItem(index);
+});
 // End of Shopping Functions //////////////////////
 
 // Add Item Functions /////////////////////////////////////
@@ -51,7 +51,7 @@ function showItem(n) {
   const itemsContainer = document.getElementById("items-container");
   itemsContainer.classList.add("items-container");
 
-  item.innerHTML = items[n].name
+  item.innerHTML = items[n].name;
 
   console.log(item);
 
@@ -59,7 +59,7 @@ function showItem(n) {
   itemDiv.classList.add("item");
   itemDiv.innerHTML = `
   <div class="item-name">${item.name}</div>
-  <div class="item-price">${item.price}</div>
+  <div class="item-location">${item.location}</div>
   <div class="item-id">${item.id}</div>
   `;
 
@@ -86,5 +86,6 @@ function handleSearch(e) {
   });
 
   console.log(filteredItems);
-
 }
+
+// Database Functions
