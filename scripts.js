@@ -1,15 +1,15 @@
 // Hard coded data, will be replaced with local storage (database)
 const items = [
-  { id: "001", name: "Katana", price: 1000 },
-  { id: "002", name: "Boxing Gloves", price: 100 },
-  { id: "003", name: "Bike", price: 100 },
-  { id: "004", name: "Hockey Stick", price: 115 },
-  { id: "005", name: "Football", price: 25 },
-  { id: "006", name: "Basketball", price: 30 },
-  { id: "007", name: "Soccer Ball", price: 100 },
-  { id: "008", name: "Volleyball", price: 100 },
-  { id: "009", name: "Bocce Ball", price: 100 },
-  { id: "010", name: "Tennis Ball", price: 100 },
+  { id: "001", name: "Katana", location: 1000 },
+  { id: "002", name: "Boxing Gloves", location: 100 },
+  { id: "003", name: "Bike", location: 100 },
+  { id: "004", name: "Hockey Stick", location: 115 },
+  { id: "005", name: "Football", location: 25 },
+  { id: "006", name: "Basketball", location: 30 },
+  { id: "007", name: "Soccer Ball", location: 100 },
+  { id: "008", name: "Volleyball", location: 100 },
+  { id: "009", name: "Bocce Ball", location: 100 },
+  { id: "010", name: "Tennis Ball", location: 100 },
 ];
 
 // Shopping Functions //////////////////////
